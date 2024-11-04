@@ -1,34 +1,51 @@
 <html>
     <style>
 
-.homepageForm{
-        border: dotted 2px black;
-
-        margin: 0 auto;
-        width: 400px;
-        padding: 50;
-    }
 
 
+.homepageForm {
+    border: solid 10px black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
 
-        .homepageForm button {
-            border: red;
-        }
-        * {
-            background-color: black;
-            color: #ffffff;
-        }
-        div {
-            
-            border: solid #ffffff;
-        }
-        
+.signup-form h1 {
+    margin-bottom: 20px; 
+    margin-top: -50px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    /* border: solid 2px red;
+    padding: 15px 30px;
+    font-size: 18px; 
+    width: 200px; 
+    height: 60px; 
+    cursor: pointer; */
+}
+
+
+  
     </style>
     <script src="homepage.js"></script>
     <div class="homepageForm">
         <h1>Split Bills</h1>
-        <button type="button" style='border: solid red;'id="userPaid" onclick="userPaid()">Are you paying the bill?</button>
-        <button type="button" style='border: solid red;'id="friendPaid" onclick="friendPaid()">Did your friend paid for you?</button>
+        <div class="button-container">
+        <button type="button", id="userPaid" onclick="userPaid()">Are you paying the bill?</button>
+        <button type="button", id="friendPaid" onclick="friendPaid()">Did your friend paid for you?</button>
     </div>
+</div>
     
 </html>
